@@ -1,0 +1,103 @@
+/* Reset general */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Diseño del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Título del catálogo */
+header {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+/* Estilos del contenedor */
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos de la tarjeta */
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen del reloj */
+.watch-image img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    padding: 10px;
+    display: block;
+}
+
+/* Información del reloj */
+.watch-info {
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+/* Nombre del reloj */
+.watch-name {
+    background-color: #f7f7f7;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.watch-name .watch-brand {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.watch-name .watch-model {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+/* Características del reloj */
+.watch-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.watch-info p strong {
+    color: #000;
+}
